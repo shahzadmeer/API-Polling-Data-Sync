@@ -1,0 +1,1162 @@
+RealPars 
+1st video 
+2 wk ago
+10:09
+67k views 
+Timestamps:
+00:00 - Intro
+02:00 - Principle 1: Current and resistance
+02:49 - Principle 2: Voltage drop and high resistance
+03:46 - Principle 3: Open circuits stop current, not voltage
+05:10 - Principle 4: Voltage vs. resistance measurements
+07:18 - Principle 5: The half-split method
+07:46 - Principle 6: Test a theory
+08:14 - Principle 7: Verify before replacing parts
+08:51 - Principle 8: Find the root cause
+Learn eight electrical troubleshooting principles for industrial systems. See how voltage measurements can help you find open circuits, high resistance, and blown fuses. You’ll also learn why every measurement should confirm a theory before you replace a component.
+Transcript
+Intro
+0:00
+Troubleshooting.
+0:01
+The word strikes fear into many, but for seasoned service engineers,
+0:06
+it’s just another day in the office.
+0:08
+Imagine you've just arrived at a plant.
+0:11
+You are the field engineer tasked with bringing a downed system back to life
+0:16
+so production can restart.
+0:18
+Here’s a keeper for you.
+0:20
+The best troubleshooter isn’t the one who fixes
+0:23
+the fault after replacing a bunch of parts.
+0:26
+It’s the one who replaces the right part the first time
+0:30
+and understands why it failed.
+0:32
+In this video, I’ll talk about what effective troubleshooting really means
+0:36
+and how to get started.
+0:38
+You’ll learn, or perhaps be reminded, that understanding
+0:41
+a handful of fundamental electrical principles
+0:44
+will make you a faster, more confident troubleshooter.
+0:48
+Alright…let’s get back to the plant and our troubleshooting adventure.
+0:53
+Where do you begin?
+0:55
+Not by frantically swapping parts or by taking a bunch of multimeter measurements
+0:59
+just because you are anxious to do something.
+1:03
+You ask yourself two simple questions:
+1:05
+What are the symptoms?
+1:07
+What is the system doing, or what isn't it doing?
+1:12
+Quite often, it’s the control room or station operators who can help you out here.
+1:17
+They can also tell you what happened right before the system went down.
+1:21
+This may be obvious, but it’s worth stating.
+1:24
+You can’t fix it if you don’t know how it works;
+1:28
+you're lost at sea if you don't know what "normal" looks like,
+1:31
+and you’ll just be guessing.
+1:33
+After searching for visible signs of damage, such as broken or burnt components,
+1:39
+it's time to open the toolbox.
+1:41
+If your team needs stronger troubleshooting skills, RealPars Custom Training can help.
+1:47
+We tailor training to your equipment, systems, and specific learning needs.
+1:52
+Check out the link in the description to learn more.
+1:55
+Ok, let’s move on to the electrical principles mentioned earlier.
+2nd video 
+
+8,393 views  20 Jul 2026 
+⌚Timestamps:
+00:00 - Intro
+00:34 - Processes and Process Industries
+01:00 - Types of Processes
+02:11 - Open Loop and Closed Loop Control
+03:42 - The Control Loop
+04:40 - Control Strategies
+08:08 - Wrap-Up
+
+Process control is the use of control techniques to regulate process variables and ensure that a process remains stable and consistently produces a good quality product. 
+
+By the end of this video, you'll learn the basics of process control, including process types, control loops, and common control strategies used in industry.
+Intro
+0:01
+Process control is the use of control techniques to regulate process variables
+0:06
+and ensure that a process remains stable and consistently
+0:09
+produces a good quality product.
+0:12
+In this video, I’ll introduce to the basics of process control.
+0:16
+By the end of the video, you will know:
+0:19
+What a process is and what are the two main types of process
+0:23
+The difference between open loop and closed loop control
+0:27
+The components that make up a control loop
+0:29
+The most common process control strategies used in industry
+Processes and Process Industries
+0:34
+Process is the transformation of raw materials into end products
+0:38
+through operations like mixing, heating, cooling, filtering, and storing.
+0:44
+These raw materials are typically in liquid, gas, or slurry form.
+0:49
+Process industries include chemical manufacturing, oil and gas,
+0:53
+food and beverage, pharmaceutical production, water treatment, and power generation.
+Types of Processes
+1:00
+There are two main types of process: continuous and batch.
+1:05
+In a continuous process, material flows constantly and each piece of equipment runs
+1:10
+in a single dedicated state.
+1:13
+Continuous processes rarely shut down because there is generally a massive cost
+1:18
+associated with starting the process and getting it to a steady state.
+1:23
+The goal of a continuous process is to keep the output consistent
+1:27
+regardless of how long the process runs.
+1:30
+Cement kilns and oil refining are examples of continuous processes.
+1:36
+In a batch process, the process has defined start and end points
+1:41
+and produces discrete quantities of material called batches.
+1:45
+Each batch can be traced back to the specific input materials used to produce it.
+1:51
+Brewing beer is an example of a batch process.
+1:54
+In this process, a specific amount of raw materials are loaded into the process
+1:59
+and, after passing through each stage of the process, a batch of beer is produced.
+2:05
+This batch of beer can be traced back to the raw materials that were
+2:08
+used to produce it if required.
+Open Loop and Closed Loop Control
+2:11
+There are two ways to control a process: open loop control and closed loop control.
+2:17
+In open loop control, an action is taken regardless of the current process conditions.
+2:23
+A simple example is setting an air conditioning unit to switch on at 10:00 AM
+2:27
+and switch off at 7:00 PM every day.
+2:30
+The action always happens regardless of the current temperature of the room.
+2:35
+Open loop control is simple and inexpensive to implement, but it is often inefficient.
+2:42
+In closed loop control, the current condition is measured, compared to a target
+2:46
+value called a setpoint, and corrected if there is a deviation.
+2:51
+Closed loop control is the basis of process automation.
+2:55
+Closed loop control can be manual or automatic.
+2:59
+In manual closed loop control, a person monitors the process variable and adjusts
+3:04
+the output manually.
+3:06
+They may do this by opening or closing a valve by hand.
+3:10
+In automatic control, a controller makes those adjustments without human intervention.
+3:16
+Process control is often implemented on PLCs.
+3:20
+To learn more about how to program Allen-Bradley PLCs for process control,
+3:25
+check out our Learn Logix course series.
+3:28
+RealPars members get access to these courses and all of our other great courses
+3:33
+on industrial automation.
+3:35
+Learn more at realpars.com/business
+3:38
+or using the link in the description below this video.
+The Control Loop
+3:42
+A closed loop control system is made up of three main elements:
+3:46
+a measurement device or sensor, a controller, and an actuator.
+3:52
+Sensors, also known as primary devices, measure the process variable.
+3:58
+Sensors may be equipped with a transmitter.
+4:01
+Transmitters convert the raw sensor readings into scaled engineering units
+4:05
+that the controller can use.
+4:07
+Common sensors used in process control include temperature sensors,
+4:12
+pressure sensors, and flow meters.
+4:15
+The process value is sent to a controller,
+4:18
+which compares the process value to the setpoint.
+4:21
+Based on the difference between the two, the controller calculates
+4:25
+an output to drive the process value back toward the setpoint.
+4:29
+The output signal is sent to an actuator, which physically controls the process.
+4:34
+Examples of actuators include heaters, pumps, and control valves.
+Control Strategies
+4:40
+Now that you know how a closed loop control works,
+4:43
+let's look at the control strategies used to manage process loops.
+4:47
+The most common control strategy is a PID loop,
+4:51
+or Proportional-Integral-Derivative loop.
+4:54
+PID is an algorithm that controls a process using three configurable dimensions:
+5:00
+proportional, integral, and derivative.
+5:04
+Each dimension is tuned to match the behaviour of the specific
+5:07
+process being controlled.
+5:09
+To learn more about PID control, PID tuning, and implementing PID loops,
+5:15
+check out our PID Controller Basics course using the link in the description below.
+5:21
+Two-state control is used for simple devices that have only two positions: on or off.
+5:28
+A basic on/off valve is a good example.
+5:31
+When the process variable falls below a threshold, the valve opens.
+5:36
+When it rises above another threshold, the valve closes.
+5:41
+In selective control, two or more control loops feed into a selection instruction,
+5:47
+and the output that wins drives the actuator.
+5:50
+This strategy is often used to protect equipment so it is often
+5:54
+the lowest value that wins.
+5:56
+For example, in a pipe system, one PID loop may be based on a flow meter
+6:02
+and another on a pressure sensor.
+6:05
+The flow meter loop may demand more flow to meet the setpoint,
+6:09
+but if the pressure is rising too high, the pressure PID wins.
+6:14
+This protects the equipment even if the flow setpoint is not fully met.
+6:19
+In split range control, a single measurement signal drives two actuators
+6:24
+that complement each other across the output range.
+6:27
+A heat-cool loop is a common example.
+6:30
+Depending on the process value, either a heater or a cooler is pulsed
+6:35
+to control the setpoint.
+6:37
+This approach allows the use of simpler digital devices
+6:41
+instead of more expensive analog ones.
+6:44
+Feedforward control compensates for known disturbances
+6:48
+before they have a chance to affect the process variable.
+6:51
+This is useful when feedback from a measuring device is slow,
+6:55
+as it prevents large swings in the process before the controller has time to react.
+7:00
+Feedforward requires mathematical modelling of the process
+7:04
+and can be difficult to implement.
+7:07
+Ratio control maintains a fixed ratio between two input streams.
+7:12
+One stream flows in uncontrolled,
+7:15
+and the second is calculated and adjusted to stay in proportion with the first.
+7:20
+Acid dilution is a practical example.
+7:23
+If a process requires one part acid to be diluted with three parts water,
+7:27
+the water may flow freely and the acid flow is continuously calculated
+7:32
+and adjusted to maintain that ratio.
+7:36
+In cascade control, two loops are linked together.
+7:40
+The secondary loop reacts faster to disturbances and adjusts the actuator
+7:45
+before the slower primary variable is affected.
+7:48
+A common example is a reactor with a temperature jacket.
+7:52
+The primary loop controls the product temperature inside the reactor.
+7:56
+The secondary loop controls the jacket temperature, adjusting the steam valve in
+8:01
+response to jacket temperature changes before those changes have time to affect
+8:05
+the product temperature.
+8:07
+In this video, I introduced you to the fundamentals of process control.
+Wrap-Up
+8:12
+Specifically, you learned:
+8:14
+What process control is,
+8:16
+What types of processes exist,
+8:18
+The difference between open loop and closed loop control
+8:22
+The structure of a control loop
+8:24
+Common control strategies used in process control
+8:28
+And if you're a plant manager looking to train your maintenance team,
+8:32
+visit realpars.com/business. Fill out the form and book a call with our team.
+3rd video 
+
+10,643 views  2 Sept 2026
+2:18
+
+Set up and use Ignition SCADA.
+Create and configure tags.
+Build HMIs with Perspective.
+Bind tags to HMI components.
+Work with simulated device data.
+Create basic alarms and dynamic displays.
+Track and display historical data.
+Build and test Ignition projects.
+:01
+[music]
+0:08
+We're pleased to have you here for the
+0:10
+introduction to ignition SCADA course.
+0:13
+This introductory course provides a
+0:15
+comprehensive foundation in ignition
+0:17
+SCADA by inductive automation. We've
+0:20
+designed it as a prerequisite for more
+0:22
+advanced training. It walks you through
+0:25
+the essential concepts, tools, and
+0:27
+workflows needed to begin building
+0:29
+industrial automation interfaces and
+0:31
+systems with Ignition. You will explore
+0:34
+the architecture of Ignition and gain
+0:37
+hands-on experience with installation,
+0:40
+configuration, and development using the
+0:42
+Ignition Designer.
+0:45
+The course emphasizes practical skills
+0:48
+such as creating tags, building human
+0:50
+machine interfaces or HMIs, and
+0:54
+connecting to devices. By the end of
+0:56
+this course, you will be able to
+0:58
+confidently create a basic ignition
+1:01
+project, connect to simulated devices,
+1:04
+and build a functional user interface
+1:07
+using perspective. Upon completing this
+1:10
+course, you'll be able to explain what
+1:13
+ignition SCADA is and where it is used
+1:16
+in industry.
+1:18
+Download, install, and launch Ignition.
+1:22
+Navigate the Ignition Gateway homepage
+1:25
+and understand all major sections.
+1:28
+Describe the core components of
+1:30
+Ignition: Gateway, Designer, Vision, and
+1:34
+Perspective. Launch and use the Ignition
+1:37
+Designer. Create and configure devices
+1:40
+using the built-in simulator.
+1:42
+Demonstrate how to create tags,
+1:44
+including memory tags and OPC tags.
+1:47
+Build a basic HMI using perspective
+1:50
+components, and demonstrate how to use
+1:53
+the property editor, including bindings
+1:56
+and dynamic properties. After completing
+1:59
+the course, you'll receive a certificate
+2:01
+from RealPars. Throughout this course,
+2:04
+you'll encounter detailed lessons and
+2:06
+hands-on examples. Please be prepared to
+2:09
+allocate dedicated time to dive into the
+2:12
+content to ensure you get the most from
+2:15
+your learning journey.
+4rt video 
+
+⌚Timestamps:
+00:00 - Intro
+00:17 - Why do we use 3-phase power?
+01:34 - Why do we use fuses?
+02:29 - How does a fuse work?
+04:12 - What is a contactor?
+05:36 - How does a contactor work?
+08:03 - What is an overload relay?
+09:19 - Fuse vs overload relay
+10:49 - Summary
+
+In this video, ‪@Shahpour‬  explains how a 3-phase motor wiring diagram works in a simple, easy-to-follow way.
+
+We go through each part of the diagram step by step:
+
+Why we use 3 power lines instead of 1
+What fuses do and how they protect the circuit
+How a contactor works (and why we control it with a coil)
+What an overload relay does and how it’s different from a fuse
+
+By the end, you’ll be able to look at the wiring diagram in the video and explain it to a friend or a colleague at work.
+:17
+If I zoom in here, you can see that this is a three-phase electric motor,
+0:22
+which means this is a big, powerful, heavy electric motor.
+0:25
+Now, if I go to the top, as you can see, I have L1, L2, and L3 here.
+0:33
+These are the power wires that we use to power the electric motor and turn it on.
+0:38
+The reason we have three wires here, instead of only one wire,
+0:43
+is simply because, as I mentioned, this is a big, heavy industrial motor,
+0:47
+so we need more power to turn it on.
+0:50
+So, that is why we need three lines of power instead of one.
+0:54
+For example, for a TV you have at home, it is okay to use only one power line
+1:00
+because it is a small device compared to a heavy electric motor.
+1:03
+So, you can only use one power line to turn it on,
+1:07
+but for big electrical equipment like this motor,
+1:11
+we need more power, so we need to use three lines of power instead of one.
+1:15
+So, when we want to turn on small things at home like a TV or a washing machine,
+1:21
+only one power line is enough.
+1:24
+That is why, on the back of your TV at home,
+1:27
+you can only see one cable, but when we need to turn on bigger things,
+1:31
+we need three lines of power.
+Why do we use fuses?
+1:34
+Okay, after the power wires, as you can see, we have some fuses here.
+1:39
+These fuses are here to protect all the wires and devices we have installed after them
+1:44
+against too much electricity.
+1:46
+So, if for any reason, too much electricity wants to enter this electric circuit
+1:52
+and damage the equipment, these fuses block it right here
+1:56
+and won't let it damage the circuit.
+2:00
+And the way that they do it is by burning themselves and sacrificing their lives.
+2:05
+That means when there is too much electricity wanting to enter the circuit from here,
+2:11
+they burn themselves, and by doing this, they cut off the circuit
+2:15
+so that huge amount of electricity cannot enter the circuit and damage the equipment.
+2:20
+So, these are like brave soldiers
+2:22
+that sacrifice their lives at the border of this circuit
+2:26
+so everything else can stay safe.
+2:28
+Now, how does this exactly happen?
+How does a fuse work?
+2:31
+Inside each of these fuses, there is a very thin metal wire.
+2:35
+When there is too much electricity passing through these metal wires,
+2:39
+they burn and cut off the circuit, and that is how
+2:43
+they stop that overload of electricity to the circuit.
+2:47
+Now, when this happens, we need to do two things.
+2:50
+Number one, we obviously need to find out
+2:53
+what caused the overflow of electricity coming to the circuit
+2:56
+so we can possibly fix it so it never happens again.
+3:00
+And number two, we need to replace the dead fuses with new ones
+3:04
+so that if this ever happens again, they can protect the circuit again.
+3:08
+And by replacing, I mean we need to simply open up each fuse by hand,
+3:13
+take out the dead fuse, and replace it with a new one.
+3:17
+Before we continue with the rest of this wiring diagram,
+3:19
+I wanted to let you know that if you have a team of engineers or technicians
+3:23
+that need custom training on any industrial automation topics,
+3:27
+you can check out realpars.com/custom-training
+3:32
+and fill out the form and book a meeting with us.
+3:34
+For example, there was a company that recently reached out to us because
+3:38
+they needed to get their team up and running with
+3:41
+programming and troubleshooting Siemens PLCs.
+3:44
+We created a few half-day online instructor-led classes
+3:48
+for them, and with that, they could get their entire team
+3:52
+trained in a couple of weeks without even needing them to leave the factory
+3:56
+for days or pay for hotel and travel costs.
+3:59
+So, if your company needs custom training on any industrial automation topic,
+4:04
+make sure to check out realpars.com/custom-training.
+4:09
+You can find the link in the video description.
+What is a contactor?
+4:12
+Okay, after the fuses, we have the contactor.
+4:15
+As you can see, this is a simple switch.
+4:17
+But instead of one contact, it has three contacts.
+4:21
+The switches you have at home that you use to turn on and off the lights,
+4:25
+they have only one contact, but this one has three contacts.
+4:29
+And the reason for that is simply because at home you have only one line of power,
+4:34
+so a switch with only one contact can do the job for you,
+4:39
+but here we have three lines of power, so we need a switch with three contacts.
+4:44
+Now, just like any other switch, using this switch
+4:47
+we can cut off the electricity, and by doing that
+4:51
+we can turn off the motor
+4:53
+or we can let the electricity pass and turn the motor back on.
+4:57
+As I mentioned, the main difference between
+4:59
+this switch and a simple switch you have at home
+5:02
+that you use to turn on and off the lights is that this one has three contacts
+5:07
+and those you have at home, they only have one contact.
+5:11
+But another difference between this switch and a simple switch you have at home
+5:15
+is that you cannot just come close to this switch
+5:18
+and simply push it and turn it on and off. Why?
+5:22
+Because it is not safe.
+5:24
+This is three-phase power. Now you may ask, if we cannot come close to it,
+5:29
+how can we turn this switch on and off?
+5:32
+Well, we do that indirectly and from a distance.
+How does a contactor work?
+5:36
+So, the way that a contactor works is that each contactor,
+5:39
+in addition to these three contacts, also has a coil. Now, what is a coil?
+5:45
+A coil is just a very long wire that is wrapped in loops.
+5:49
+So, if you take a very long wire and then wrap it into many loops,
+5:55
+you can build a coil.
+5:57
+Now, the interesting thing is that if you connect electricity
+6:00
+to a coil, it turns into a magnet.
+6:04
+So, you take a very long wire. You wrap it into loops, and it becomes a coil.
+6:09
+Now, if you take that coil and connect electricity to it, it turns into a magnet.
+6:15
+So, from wire to a coil to a magnet.
+6:18
+Now, let’s go back to the contactor.
+6:21
+In a contactor, we have three contacts and a coil.
+6:25
+If we connect electricity to the coil, even a tiny 24-volt power,
+6:30
+it turns the coil into a magnet.
+6:33
+Now, this magnet can pull the contacts in and close them.
+6:37
+And when the contacts are closed, the electricity can flow and turn the motor on.
+6:42
+Now, if I stop powering the coil, it stops behaving like a magnet
+6:46
+and lets the contacts go back to their previous position.
+6:49
+And when this happens, the electricity cannot flow to the motor anymore,
+6:53
+and the motor stops.
+6:55
+So, you see, what happened here?
+6:56
+We used a coil to indirectly open and close these contacts,
+7:02
+and by doing that, we could turn on and off the motor.
+7:07
+Again, why do we bother to do this?
+7:08
+Because a three-line power is simply too dangerous to get close to,
+7:13
+so we as humans have figured out a way to turn it on and off from a distance.
+7:18
+So, inside every contactor, there are three main contacts and a coil.
+7:23
+The coil can work with a small 24-volt power, and this 24-volt power
+7:28
+can be controlled using a switch we can touch.
+7:31
+So, we push this switch, it gets the tiny 24-volt power to the coil,
+7:36
+which is enough to turn it on.
+7:37
+When the coil is turned on, it turns into a magnet and pulls the contacts in
+7:42
+and closes them.
+7:44
+So, instead of putting a switch here and directly interacting with these contacts,
+7:48
+which is too dangerous, we put it behind a safe coil, turn it into a magnet,
+7:53
+and open and close these switches indirectly and without getting too close to them.
+7:58
+So, now I hope you understand how a contactor works.
+8:02
+Okay, so far you understand why we use three-phase power,
+What is an overload relay?
+8:06
+why we have these fuses here and how they work,
+8:09
+and what is this switch here and how it exactly works.
+8:14
+Now, let’s go a little bit down and look at this F4 here.
+8:18
+What is this? What is this F4 here?
+8:21
+This is not a fuse; instead, this is an overload relay.
+8:24
+The job of this overload relay is to protect
+8:27
+the motor against a slow increase of current.
+8:31
+For example, let’s say that this 3-phase motor that we have here is connected
+8:36
+to a conveyor belt and it is used to run that conveyor belt.
+8:40
+Now, if for any reason something blocks the conveyor belt and at the same time
+8:45
+the motor keeps pushing the conveyor belt while it is not moving,
+8:49
+the motor uses more power and more electricity
+8:52
+because it wants to move the conveyor belt.
+8:55
+And when that happens, the motor temperature goes high,
+8:59
+and if that goes on for a long time, it can damage the motor.
+9:03
+So, to prevent this, we put an overload relay right before the motor.
+9:08
+If the motor starts to get a lot of current from the circuit
+9:11
+and that continues for a long time, then this overload relay can cut off the power
+9:16
+and protect the motor.
+9:18
+Now, you may ask what the difference is between this overload relay
+Fuse vs overload relay
+9:22
+and the fuses we have up here.
+9:24
+The fuses that we have here protect the circuit against a sudden increase of current.
+9:29
+For example, if two wires touch each other and there is a short circuit,
+9:34
+all of a sudden, a huge amount of current flows into the circuit.
+9:37
+But since we have these fuses here, on each line of the power line,
+9:42
+this huge amount of current cannot pass from here and will be blocked by the fuses.
+9:48
+However, if the current increases slowly, let’s say over 5 minutes,
+9:53
+these fuses cannot detect that, but instead,
+9:56
+the overload relay can sense that and cut off the circuit.
+10:00
+So, a fuse is good when the current increase is fast and sudden,
+10:04
+like a short circuit, but an overload relay is good when the current increase is slow.
+10:10
+So, fuses are here to act fast, but the overload relay acts slowly.
+10:16
+The other difference between a fuse and an overload relay is that,
+10:20
+when a fuse acts and cuts the circuit, we need to replace it.
+10:26
+This is because, as I mentioned before, when there is a sudden increase of current,
+10:31
+the fuse burns and dies to cut off the circuit.
+10:34
+That is why we need to replace it.
+10:37
+However, this is not the same for an overload relay.
+10:40
+When an overload relay acts and cuts the circuit,
+10:44
+we usually need to reset it, and then we are good to go again.
+10:48
+Okay, to recap, this is a wiring diagram of a 3-phase motor.
+Summary
+10:52
+The reason we have three lines of power instead of one is simply because
+10:56
+we have a big motor here and we need more power.
+11:00
+We have three fuses on each line of power.
+11:02
+These are here to protect the circuit against
+11:05
+a sudden increase of electricity or current.
+11:08
+As a rule of thumb, we usually need to have our fuses as close as possible
+11:13
+to the source of power.
+11:15
+After the fuses, we have our contactor.
+11:18
+This works like a simple switch to turn on and off the circuit.
+11:22
+Inside this contactor, there is a coil.
+11:25
+When the coil is powered, it turns into a magnet
+11:28
+and pulls in these contacts, and that is how we can close and open these contacts.
+11:34
+After the contactor, we have our overload relay.
+11:37
+This is here to protect the motor against a slow increase of current.
+11:42
+Okay, there you have it.
+11:44
+Now you understand the wiring diagram of a 3-phase motor,
+11:47
+and hopefully, you can explain it to a friend or a colleague at work if you need to.
+11:51
+Again, as mentioned at the beginning of the video,
+11:53
+if you have a team and you need custom live training for your team
+11:57
+on any topic related to industrial automation,
+12:00
+feel free to check out realpars.com/custom-training
+12:04
+and fill out the form.
+12:06
+We ask you a few simple questions, and if it makes sense,
+12:09
+you’ll be provided a link to book a call with our team to see how we can help you.
+12:14
+The link is also available in the video description.
+12:17
+Thanks again for watching, and I’ll see you in the next video.
+5th video 
+
+13k views  3 months ago 
+
+⌚Timestamps:
+00:00 - Intro
+00:25 - Industrial Automation Control System structure
+04:37 - Motor control
+06:21 - Industrial networks
+07:26 - Visualization
+08:36 - Wrap-Up
+
+Learn the basics of Industrial Automation Control Systems (IACS) and see how PLCs, HMIs, and drives are used to control machines and industrial processes through industrial networks. 
+This video explains the main parts of an industrial control system and how they’re used in factories and manufacturing.
+Industrial Automation Control System structure
+0:25
+Although different industrial automation control systems may look different
+0:29
+or be called different names, they are all made of similar components
+0:33
+arranged in a similar architecture.
+0:36
+An IACS is made up of:
+0:38
+Input devices
+0:40
+Input module
+0:41
+Logic module
+0:43
+Output module
+0:44
+and Output devices
+0:46
+Input devices are sensors that detect changes in the environment
+0:50
+and send information to the IACS as electrical signals.
+0:55
+There are two types of input devices
+0:57
+digital and analog.
+0:59
+A digital input device is a device that has two states.
+1:04
+These states are typically on and off.
+1:07
+Examples of digital input devices are pushbuttons,
+1:11
+which can be pushed or not pushed,
+1:13
+and photoelectric sensors, which can be triggered or not triggered.
+1:18
+Digital input devices send information to the IACS as a 0-volt or 24-volt signal
+1:25
+to indicate if the input device is on or off.
+1:29
+Analog input devices can send more than two values to the control system.
+1:34
+Typically, an analog input device sends a value to the control system
+1:39
+that is in the range of 0 to 10 volts or 4 to 20 milliamps.
+1:44
+Examples of analog input devices
+1:46
+are sensors that measure conditions like temperature sensors,
+1:50
+pressure sensors, and humidity sensors.
+1:53
+Input devices connect to a control system using input modules.
+1:58
+Input modules take electrical signals from input devices
+2:02
+and convert them into digital signals that the logic module can understand.
+2:07
+Input modules typically convert a digital input into the values 0 and 1
+2:13
+and convert analog signals into a range of numbers.
+2:16
+In an IACS, the most common type of logic module that you will encounter is a PLC,
+2:23
+also known as a Programmable Logic Controller.
+2:26
+A PLC is an industrial computer
+2:29
+that has been hardened and adapted to control automated processes and equipment.
+2:34
+In an IACS, a logic module executes the same steps over and over.
+2:40
+First, it scans its inputs to understand the state of the process.
+2:45
+Then, it executes its program to determine which outputs need to be actuated.
+2:50
+Then, it sends commands to the output modules to control the process.
+2:55
+Finally, the cycle repeats.
+2:57
+If you want to learn more about PLCs and how they operate,
+3:00
+you can check out our PLC Fundamentals course,
+3:04
+which is linked in the description below this video.
+3:07
+The logic module sends commands to an output module to control a process.
+3:12
+The output module takes the digital value from the logic module
+3:15
+and converts it into an electrical signal that controls output devices.
+3:20
+Output devices also use digital and analog signals.
+3:25
+Finally, output devices are devices that have an effect on the environment
+3:29
+and are used to control a process or piece of equipment.
+3:33
+Some common output devices include motors, valves, actuators, and indicator lights.
+3:41
+Before we continue, let’s take a moment to talk about today’s sponsor:
+3:45
+RealPars Custom Live Training.
+3:48
+We offer live, instructor-led online training
+3:51
+that can be customized for your team based on the equipment you have on-site.
+3:56
+It helps save on travel costs and keeps your team
+3:59
+from being away from the factory floor for long periods.
+4:03
+If you need custom live training on topics like PLC programming, troubleshooting,
+4:08
+or sensor configuration, check out the link in the description
+4:12
+and fill out the form to see if it’s a good fit for you.
+4:15
+Now, back to the video.
+4:18
+The architecture that we have discussed so far applies to small,
+4:22
+simple control systems.
+4:24
+Modern IACSes tend to be larger, more complex, and have additional components.
+4:31
+Let’s look at some of the additional components that you may encounter
+4:34
+when working with IACSes.
+4:36
+Many IACSes are used to control motors.
+Motor control
+4:41
+These motors are used to run conveyor belts,
+4:44
+move robotic arms,
+4:46
+turn fans,
+4:47
+and agitate liquid in vessels.
+4:50
+In simple applications, the motor is controlled using a contactor or motor starter.
+4:56
+A contactor is effectively a big relay that the logic module
+4:59
+can open and close using a digital output.
+5:03
+However, there is very limited control when you are using a contactor.
+5:08
+For example, you can’t control the acceleration and deceleration of the motor,
+5:12
+which can be important in some applications.
+5:15
+In applications where you want to control the motor’s acceleration, deceleration,
+5:20
+or speed, a device called a Variable Frequency Drive or Variable Speed Drive is used.
+5:27
+VFDs are intelligent devices that control motors by regulating their output frequency.
+5:33
+Typically, VFDs communicate with a PLC using an industrial network,
+5:39
+which we will talk about shortly.
+5:41
+In other applications, the speed of a motor is less important than the position.
+5:46
+For example, if you are controlling a gantry crane,
+5:50
+the speed of the motor matters less than the position of the crane
+5:53
+relative to the object that you want to pick up.
+5:57
+In applications where it is important to control the position of the motor,
+6:00
+a device called a Servo Drive is used.
+6:04
+These are drives that execute closed-loop control
+6:06
+of a motor by telling the motor to move
+6:09
+and then reading the actual position of the motor using an encoder.
+6:13
+Just like a VFD, servo drives typically communicate with a logic module
+6:19
+using an industrial network.
+Industrial networks
+6:21
+At the beginning of this video, I described an IACS
+6:25
+where the input modules are connected directly to the logic module.
+6:29
+But in a large IACS, there can be thousands of input and output devices
+6:34
+that are spread over a large area.
+6:36
+In these systems, it is very difficult to wire
+6:39
+all of the devices back to the logic module.
+6:42
+Instead, industrial networks are used to connect the logic module to remote devices
+6:48
+like IO stations, VFDs, and servo drives.
+6:52
+An industrial network is a group of devices that are linked together to share data.
+6:58
+Most common industrial networks use Ethernet cables and network
+7:01
+switches to connect devices.
+7:04
+Once they are connected together on an industrial network,
+7:08
+devices use a communication protocol to exchange data.
+7:12
+A communication protocol is simply a set of rules that defines how communication
+7:16
+between devices should work.
+7:19
+Common communication protocols include Modbus TCP/IP, EtherNet/IP, and PROFINET.
+Visualization
+7:26
+Finally, most IACSes have a way to control a process
+7:30
+and visualize the status of the process and equipment in the IACS.
+7:35
+This is typically done using a Human Machine Interface, also known as an HMI.
+7:41
+An HMI is an interface that lets a person interact with a machine.
+7:46
+The most simple HMIs are arrays of pushbuttons, switches, lights, and gauges.
+7:52
+These HMIs only allow a limited amount of data to be exchanged.
+7:56
+Most modern machines are equipped with electronic HMIs.
+8:01
+These are small industrial computers that can display a graphical
+8:04
+representation of the process.
+8:06
+Using the graphical display, operators can interact with the process
+8:11
+by sending commands or adjusting setpoints.
+8:14
+Finally, most factories or plants have a site-level HMI.
+8:19
+A site-level HMI is a supervisory HMI that aggregates data from many machines
+8:25
+and displays them in a single view.
+8:27
+These HMIs are typically found in a control room
+8:30
+and are used to control full factories and production lines
+8:34
+instead of individual machines.
+Wrap-Up
+8:36
+Now you know what an Industrial Automation Control System is
+8:40
+and what components make up an IACS.
+8:44
+If you want to learn more about designing, programming, commissioning,
+8:48
+and troubleshooting IACSes,
+8:51
+check out our RealPars membership,
+8:53
+which gives you access to all of our courses on IACSes,
+8:57
+including courses on programming PLCs,
+9:00
+configuring drives, building HMI applications, and working with industrial networks.
+9:07
+Learn more using the link in the description below.

@@ -1,0 +1,244 @@
+{
+  "name": "API Polling & Data Sync",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 1
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -352,
+        -16
+      ],
+      "id": "2df02e41-99c8-41f7-9816-bb9abda03e55",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "url": "https://jsonplaceholder.typicode.com/todos",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        -144,
+        -16
+      ],
+      "id": "9fcdf4f1-0c02-4f69-9b57-5f90c39bf015",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst items = $input.all();\n\nreturn items\n  .filter(item => item.json.completed === true)\n  .map(item => ({\n    json: {\n      ID: item.json.id,\n      Title: item.json.title,\n      UserID: item.json.userId,\n      Status: \"Completed\"\n    }\n  }));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        80,
+        -16
+      ],
+      "id": "a1f04b39-47ff-4508-9810-88923494f746",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1k4p0s8YDLTnbMyOAY2rIpaWDyY3NTf8cL9bG1fxsoSc",
+          "mode": "list",
+          "cachedResultName": "API Polling Data Sync",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1k4p0s8YDLTnbMyOAY2rIpaWDyY3NTf8cL9bG1fxsoSc/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1k4p0s8YDLTnbMyOAY2rIpaWDyY3NTf8cL9bG1fxsoSc/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "ID",
+              "lookupValue": "={{ $json.ID }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        304,
+        -80
+      ],
+      "id": "a3033209-a86b-416a-8962-55a824742e39",
+      "name": "Check Existing Tasks",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "HCKFT525s0wnkaE9",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1k4p0s8YDLTnbMyOAY2rIpaWDyY3NTf8cL9bG1fxsoSc",
+          "mode": "list",
+          "cachedResultName": "API Polling Data Sync",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1k4p0s8YDLTnbMyOAY2rIpaWDyY3NTf8cL9bG1fxsoSc/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1k4p0s8YDLTnbMyOAY2rIpaWDyY3NTf8cL9bG1fxsoSc/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "ID": "={{ $json.ID }}",
+            "Title": "={{ $json.Title }}",
+            "UserID": "={{ $json.UserID }}",
+            "Status": "={{ $json.Status }}"
+          },
+          "matchingColumns": [
+            "ID"
+          ],
+          "schema": [
+            {
+              "id": "ID",
+              "displayName": "ID",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Title",
+              "displayName": "Title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "UserID",
+              "displayName": "UserID",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        320,
+        80
+      ],
+      "id": "79f980dd-ab35-43a5-b298-42a98619735e",
+      "name": "Upsert Tasks to Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "HCKFT525s0wnkaE9",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Upsert Tasks to Google Sheets",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Check Existing Tasks",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Existing Tasks": {
+      "main": [
+        []
+      ]
+    },
+    "Upsert Tasks to Google Sheets": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "fb64ab3c-0e91-4f0d-9b96-a5862cc79b69",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "c8e44252fbe6b951dba9db1232ca8f02ea9aaced2f5a323dd38fee7ece6d30ef"
+  },
+  "nodeGroups": [],
+  "id": "vXkKWAut44s2yQh4",
+  "tags": []
+}
